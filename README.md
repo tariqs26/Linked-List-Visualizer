@@ -6,6 +6,7 @@ This is a simple linked list visualizer supporting the following operations:
 
 - Insertion
 - Deletion
+- Reversal
 
 ## Installation
 
