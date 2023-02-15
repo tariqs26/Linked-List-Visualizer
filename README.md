@@ -26,6 +26,6 @@ In the project directory, you can run:
 
 - Builds the app for production to the `build` folder.
 
-### `npm run serve`
+### `npm run preview`
 
-- Serves the app in the production mode.
+- Preview the production build.
