@@ -13,7 +13,7 @@ export default function LinkedList({ head }: Props) {
       <AnimatePresence mode='popLayout' initial={false}>
         {head &&
           listToArray(head).map((node) => (
-            <Node key={node.id} value={node.value} next={node.next} />
+            <Node key={node.id} value={node.value} />
           ))}
         <Node />
       </AnimatePresence>
