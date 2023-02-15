@@ -23,7 +23,7 @@ export default function App() {
   return (
     <>
       <header className={Styles.header}>
-        <h1>Linked List</h1>
+        <h1>Linked List Visualizer</h1>
         <nav className={Styles.nav}>
           <button onClick={() => push(head, setHead, size(head) + 1)}>
             Push
@@ -34,6 +34,7 @@ export default function App() {
           </button>
           <button onClick={() => popFront(head, setHead)}>Pop Start</button>
           <button onClick={() => setHead(reverse(head))}>Reverse</button>
+          <button onClick={() => setHead(null)}>Clear</button>
         </nav>
       </header>
       <main className={Styles.main}>
