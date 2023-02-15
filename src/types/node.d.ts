@@ -1,6 +1,6 @@
 type SLNode = {
   id: string;
-  value: string;
+  value: number;
   next: SLNode | null;
 };
 

@@ -8,7 +8,7 @@ const size = (head: SLHead) => {
   return count;
 };
 
-const push = (head: SLHead, setHead: SLSetHead, value: string) => {
+const push = (head: SLHead, setHead: SLSetHead, value: number) => {
   let headCopy = head;
   const newNode = {
     id: crypto.randomUUID(),
@@ -40,7 +40,7 @@ const pop = (head: SLHead, setHead: SLSetHead) => {
   setHead({ ...(head as SLNode) });
 };
 
-const pushFront = (head: SLHead, setHead: SLSetHead, value: string) => {
+const pushFront = (head: SLHead, setHead: SLSetHead, value: number) => {
   const newNode = {
     id: crypto.randomUUID(),
     value,

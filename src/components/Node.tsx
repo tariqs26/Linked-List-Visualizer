@@ -2,25 +2,20 @@ import { motion } from 'framer-motion';
 import styles from './Node.module.css';
 
 type Props = {
-  value: string;
-  next?: string | null;
-  isNull?: boolean;
+  value?: number;
+  next?: number | null;
 };
 
-const Node: React.FC<Props> = ({ value, next, isNull }) => {
+export default function Node({ value }: Props) {
   return (
-    <>
-      <motion.div
-        layout
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: -50, opacity: 0 }}
-      >
-        <p className={styles.node}>{value}</p>
-        {!isNull && <p className={styles.next}>next: {next ?? 'Null'}</p>}
-      </motion.div>
-    </>
+    <motion.div
+      className={styles.node}
+      layout
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: -50, opacity: 0 }}
+    >
+      {value ?? 'null'}
+    </motion.div>
   );
-};
-
-export default Node;
+}
